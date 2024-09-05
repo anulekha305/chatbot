@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="chat.css">
+</head>
+
+<body>
+    <div>
+        <nav>
+            <div class="logo">
+                <h1><b><i>MUSEUM TICKET BOOKING</i></b></h1>
+            </div>
+            <ul>
+                <li><a href="">Home</a></li>
+                <li><a href="#package">All Ticket</a></li>
+                <li><a href="#i1">Ticket Booking</a></li>
+                <li><a href="#about">About</a></li>
+            </ul>
+        </nav>
+        <p id="new">Welcome</p>
+        <button class="a">Please Book your ticket </button>
+    </div>
+    <div id="all">
+        <div id="b">
+            <select name="languages" id="ba">
+                <option value="">Choose one Language</option>
+                <option value="english">English</option>
+                <option value="Hindi">Hindi</option>
+            </select>
+        </div>
+        <div id="c">
+            <select id="ca">
+                <option value="">Choose one Museum</option>
+                <option value="Indian mueseum">Indian Museum</option>
+                <option value="National mueseum">National Museum</option>
+                <option value="chatrapati shivaji">Chatrapati shivaji Museum</option>
+                <option value="salar jung">Salar jung Museum</option>
+                <option value="victoria">Victoria Memorial</option>
+            </select>
+        </div>
+    </div>
+    <div id="any">
+        <div id="d">
+            <p>Select Date</p>
+            <input type="date">
+        </div>
+        <div id="ea">
+            <div id="e">
+                <p>Select time</p>
+                <input type="time">
+            </div>
+        </div>
+    </div>
+    <div class="pack" id="package">
+        <div class="head">
+            <h1><i>Ticket <span>Prize</span></i></h1>
+        </div>
+        <div class="Packages">
+            <div class="p1">
+                <div class="card">
+                    <img src="m1.jpg" alt="">
+                    <h3>Entry Ticket-General</h3>
+                    <p id="pad"> ₹ 75.00</p>
+                </div>
+            </div>
+            <div class="p1">
+                <div class="card">
+                    <img src="m2.jpg" alt="">
+                    <h3>Entry Ticket-Children 5Years+</h3>
+                    <p id="pad">₹ 20.00</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="Packages">
+            <div class="p1">
+                <div class="card">
+                    <img src="m3.jpg" alt="">
+                    <h3>Camera-Mobile(Including 18% GST)</h3>
+                    <p id="pad"> ₹ 59.00</p>
+                </div>
+            </div>
+            <div class="p1">
+                <div class="card">
+                    <img src="m4.jpg" alt="">
+                    <h3>Camera-Photography(Including 18% GST)</h3>
+                    <p id="pad"> ₹ 118.00</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!--  -->
+    <div id="i1">
+        <div class="container">
+            <h2>Ticket Booking</h2>
+            <div class="form-group">
+                <label for="ticketPrice">Ticket Price:</label>
+                <input type="number" id="ticketPrice" value="75">
+            </div>
+            <div class="form-group">
+                <label for="ticketQuantity">Number of Tickets:</label>
+                <input type="number" id="ticketQuantity" value="1">
+            </div>
+            <div class="total-cost">
+                Total Cost: ₹<span id="totalCost">75</span>
+            </div>
+            <a href="#" class="book-now" onclick="bookTickets()">Book Now</a>
+        </div>
+    </div>
+
+    <!-- // -->
+    <div id="about">
+        <div>
+            <h3>About us</h3>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. <br>
+                Natus, illo. Ex alias quibusdam maxime iste ipsum doloremque tempore non,<br>
+                voluptatibus officiis eveniet dolorem consectetur enim nobis repellendus <br>
+                sit quis iusto, accusantium laudantium consequatur? Suscipit molestiae <br>
+                quod quo id error pariatur odit eos quas! Ullam maiores magnam obcaecati <br>
+                quis natus </p>
+        </div>
+        <div>
+            <h3>email </h3>
+            <a href=""> abc@gmail.com </a>
+        </div>
+        <div>
+            <h3> Phone</h3>
+            <p> 1234567892</p>
+        </div>
+    </div>
+    <script src="chat.js"></script>
+</body>
+
+</html>
